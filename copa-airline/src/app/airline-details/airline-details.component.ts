@@ -13,13 +13,13 @@ export class AirlineDetailsComponent implements OnInit {
   constructor(public formBuilder: FormBuilder, public flightform: FormsModule) { }
   active = 1;
   flight =  {
-      groupId:0,
+      groupId:'',
       version:'',
       flightno:''
     };  
   
   ngOnInit(): void {
-    this.flight.groupId = 20210522;
+    this.flight.groupId = '20210522GP0000002';
     this.flight.version = 'V0001';
     this.flight.flightno = 'CM 101'
     

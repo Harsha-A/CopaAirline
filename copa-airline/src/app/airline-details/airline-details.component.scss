@@ -14,17 +14,30 @@ body  {
     background-color:#f0f0f0;    
   }
   .switch-tabs{    
-    padding: 25px 25px;
+    padding: 15px 25px;
     width: 100%;
-    min-height: 700px;  
+    min-height: 650px;  
     background-color:#ffffff;
     position: relative;
   }
-  .bold{
+  .bold,
+  .groupId,
+  .version,
+  .flight{
     font: bolder;
     color: black;
     // font-family: 'Courier New', Courier, monospace;
-    padding: 4% 5%;
+    padding: 7px 25px;
+    font-size: 17px;
+  }
+  .groupId1,
+  .version1,
+  .flight1{
+    font: bolder;
+    color: black;
+    // font-family: 'Courier New', Courier, monospace;
+    padding: 7px 25px;
+    padding-right:  75px;
     font-size: 17px;
   }
   .background-grey{
@@ -32,14 +45,14 @@ body  {
     margin:1px
   }
   #flight-details{
-    padding: 10px 25px;
-    margin-bottom: 50px;
+    padding: 5px 25px;
+    margin-bottom: 30px;
     background-color:#f0f0f0;
   }
   .airline-form1,
   .airline-form2,
   .airline-form3{
-    padding:25px;   
+    padding:45px;   
     background-color:#f0f0f0;
     min-height:450px;
   }
@@ -81,12 +94,22 @@ body  {
 }
 .btn-primary {
   color: #fff;
-  width: 100px; 
-  margin: 20px;
+  width: 100px;   
+  height: 34px;
+  margin: 10px;
+  font-size: 15px;
 }
 .btn-light {
   color: #0069d9;
   background-color: #ffffff;
-  width: 100px; 
-  margin: 20px;
+  width: 100px;   
+  height: 34px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+#leftformpart1{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 50px;
 }

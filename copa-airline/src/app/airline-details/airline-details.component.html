@@ -1,11 +1,20 @@
   <div class="container-fluid">
     <div class="col-12">
-      <div class="switch-tabs">      
-        <div class="col-8" id="flight-details">
-         <span class="bold">Group ID</span> {{flight.groupId}}
-         <span class="bold">Version</span> {{flight.version}}
-         <span class="bold">Flight</span> {{flight.flightno}}
-        </div>
+      <div class="switch-tabs">          
+          <div class="col-8" id="flight-details">
+            <div class="row">
+
+              <div class="groupId">Group ID</div><div class="groupId1">{{flight.groupId}}</div>
+              <div class="version">Version</div><div class="version1">{{flight.version}} </div>
+              <!-- <div>
+                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+              </div> -->
+              <div class="flight">Flight</div><div class="flight1">{{flight.flightno}}</div>
+              <!-- <div class="col-3"> <span class="bold">Group ID</span> {{flight.groupId}}</div>
+              <div class="col-3"><span class="bold">Version</span> {{flight.version}}</div>
+              <div class="col-3"><span class="bold">Flight</span> {{flight.flightno}}</div> -->          
+            </div>
+        </div>    
         <div class="background-grey">
           <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
             <li [ngbNavItem]="1">
@@ -14,7 +23,7 @@
                   <form [formGroup]="flightForm" (ngSubmit)="onSubmit()" >
                   <div class="airline-form1">
                   <div class="row">
-                    <div class="col-6" id="leftformpart">
+                    <div class="col-6" id="leftformpart1">
                       <div class="form-group row">
                         <div class="col-3">
                           <label for="recordstatus" class="form-label">Record Status</label>
@@ -48,7 +57,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6" id="rightformpart">
+                    <div class="col-6" id="rightformpart1">
                       <div class="form-group row">
                         <div class="col-3">
                           <label for="scheffdate" class="form-label">Sch Eff Date</label>
@@ -97,118 +106,118 @@
                   <form [formGroup]="segmentForm" (ngSubmit)="onSubmit()" >
                   <div class="airline-form2">
                   <div class="row">
-                    <div class="col-6" id="leftformpart">
+                    <div class="col-6" id="leftformpart2">
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="departurecity" class="form-label">Departure City</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="departurecity" formControlName="departurecity"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="aircraftstd" class="form-label">Aircraft STD</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="aircraftstd" formControlName="aircraftstd"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="paxstd" class="form-label">Pax STD</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="paxstd" formControlName="paxstd"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="deptimevarfromutc" class="form-label">DepTimeVarFromUTC</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="deptimevarfromutc" formControlName="deptimevarfromutc"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="arrtimevarfromutc" class="form-label">ArrTimeVarFromUTC</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="arrtimevarfromutc" formControlName="arrtimevarfromutc"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="inflightadj" class="form-label">In Flight Adj</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="inflightadj" formControlName="inflightadj"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="eqpsertype" class="form-label">Eqp Ser Type</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="eqpsertype" formControlName="eqpsertype"/>
                         </div>
                       </div>
                     </div>
-                    <div class="col-6" id="rightformpart">
+                    <div class="col-6" id="rightformpart2">
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="arrivalcity" class="form-label">Arrival City</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="arrivalcity" formControlName="arrivalcity"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="aircraftsta" class="form-label">Aircraft STA</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="aircraftsta" formControlName="aircraftsta"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="paxsta" class="form-label">Pax STA</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="paxsta" formControlName="paxsta"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="depterminal" class="form-label">Dep Terminal</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="depterminal" formControlName="depterminal"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="arrterminal" class="form-label">Arr Terminal</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="arrterminal" formControlName="arrterminal"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="aircraftconfig" class="form-label">Aircraft config</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="aircraftconfig" formControlName="aircraftconfig"/>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <div class="col-3">
+                        <div class="col-4">
                           <label for="aircrafttype" class="form-label">Aircraft Type</label>
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                           <input type="text" class="form-control" id="aircrafttype" formControlName="aircrafttype"/>
                         </div>
                       </div>

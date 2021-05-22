@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { AirlineDetailsComponent } from './airline-details/airline-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AirlineDetailsComponent
+    AirlineDetailsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
