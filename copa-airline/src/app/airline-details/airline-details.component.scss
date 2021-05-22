@@ -122,8 +122,8 @@ body  {
 }
 
 img{
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   margin-top: 12px;
   margin-right: 20px;
 }
@@ -133,5 +133,17 @@ img{
   width: 15px;
   margin-top: 12px;
   margin-right: 20px;
-  color: #00ff37;
+  // color: #00ff37;
+}
+.bg-primary {
+  background-color: #0a4789 !important;
+}
+.btn-primary{
+  background-color: #0a4789 !important;
+border: #0a4789;
+}
+a {
+  color: #0a4789;
+  text-decoration: none;
+  background-color: transparent;
 }
