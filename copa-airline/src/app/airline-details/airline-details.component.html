@@ -2,11 +2,11 @@
   <div class="col-12">
     <div class="switch-tabs">
       <p>You can use alternative markup without <code>ul li</code> elements</p>
-      <!-- <div class="row"> -->
       <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
         <li [ngbNavItem]="'nav-menu1'">
-          <a ngbNavLink>Flight</a>
+          <a ngbNavLink>Flight</a>          
           <ng-template ngbNavContent>
+            <div class="airline-form">
             <div class="row">
               <div class="col-6">
                 <div class="form-group row">
@@ -14,74 +14,76 @@
                     <label for="recordstatus" class="form-label">Record Status</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="recordstatus" />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Airline CC</label>
+                    <label for="airlinecc" class="form-label">Airline CC</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="airlinecc" />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Flight Number</label>
+                    <label for="flightnumber" class="form-label">Flight Number</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="flightnumber" />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Frequency Rate</label>
+                    <label for="frequencyrate" class="form-label">Frequency Rate</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="frequencyrate" />
                   </div>
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Sch Eff Date</label>
+                    <label for="scheffdate" class="form-label">Sch Eff Date</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="scheffdate" />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Sch Dis Date</label>
+                    <label for="schdisdate" class="form-label">Sch Dis Date</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="schdisdate" />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Sch Frequency</label>
+                    <label for="schfrequency" class="form-label">Sch Frequency</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="schfrequency" />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-4">
-                    <label for="recordstatus" class="form-label">Time Mode</label>
+                    <label for="timemode" class="form-label">Time Mode</label>
                   </div>
                   <div class="col-8">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" />
+                    <input type="text" class="form-control" id="timemode" />
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           </ng-template>
         </li>
         <li [ngbNavItem]="'nav-menu2'">
           <a ngbNavLink>Segment</a>
           <ng-template ngbNavContent>
+            <div class="airline-form">
             <div class="row">
               <div class="col-6">
                 <div class="form-group row">
@@ -200,6 +202,7 @@
                 </div>
               </div>
             </div>
+            </div>
           </ng-template>
         </li>
         <li [ngbNavItem]="'nav-menu3'">
@@ -224,8 +227,7 @@
       </ul>
 
       <div [ngbNavOutlet]="nav" class="mt-2"></div>
-
-      <pre>Active: {{ active }}</pre>
+      
       <!-- </div> -->
     </div>
   </div>
