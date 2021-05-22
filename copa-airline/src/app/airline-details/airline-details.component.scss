@@ -30,18 +30,25 @@ body  {
     padding: 7px 25px;
     font-size: 17px;
   }
-  .groupId1,
+  .groupId1{
+    font: bolder;
+    color: black;
+    // font-family: 'Courier New', Courier, monospace;
+    padding: 7px 25px;
+    padding-right:  20px;
+    font-size: 17px;
+  }
   .version1,
   .flight1{
     font: bolder;
     color: black;
     // font-family: 'Courier New', Courier, monospace;
     padding: 7px 25px;
-    padding-right:  75px;
+    padding-right:  45px;
     font-size: 17px;
   }
   .background-grey{
-    background-color:#f0f0f0;
+    background-color:#fff;
     margin:1px
   }
   #flight-details{
@@ -112,4 +119,19 @@ body  {
   flex: 0 0 50%;
   max-width: 50%;
   padding-left: 50px;
+}
+
+img{
+  height: 15px;
+  width: 15px;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.form-check-input{
+  height: 15px;
+  width: 15px;
+  margin-top: 12px;
+  margin-right: 20px;
+  color: #00ff37;
 }
