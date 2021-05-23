@@ -5,10 +5,13 @@
             <div class="row">
 
               <div class="groupId">Group ID</div><div class="groupId1">{{flight.groupId}}</div>              
-              <img src=".././../assets/paste.svg">              
+              <span class="copytoclipboard" data-toggle="tooltip" (click)="copyToClip($event)">
+                <img src=".././../assets/paste.svg">
+
+              </span>              
               <div class="version">Version</div><div class="version1">{{flight.version}} </div>
               <div>
-                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..." disabled>
               </div>
               <div class="flight">Flight</div><div class="flight1">{{flight.flightno}}</div>                       
             </div>

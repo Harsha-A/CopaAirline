@@ -17,7 +17,7 @@ export class AirlineDetailsComponent implements OnInit {
       version:'',
       flightno:''
     };  
-  
+  clipboard='';
   ngOnInit(): void {
     this.flight.groupId = '20210522GP0000002';
     this.flight.version = 'V0001';
@@ -52,7 +52,11 @@ export class AirlineDetailsComponent implements OnInit {
     }) 
   }
 
-   
+  copyToClip($event:Event){
+    console.log($event)
+    this.clipboard = this.flight.groupId
+    console.log(this.clipboard)
+  }
    getControl(){
     return this.flightForm.controls;
   }

@@ -1,4 +1,12 @@
-
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    padding-right: 40px;
+}
 .navbar-brand{
     margin-left: 15px;
     color: #fff;
@@ -11,8 +19,12 @@
 }
 .userdetails{
     color: #fff;
-    margin-left: 1100px;
+    margin-left: 1050px;
 }
 .bg-primary {
     background-color: #0a4789 !important;
+}
+img {
+    vertical-align: middle;
+    border-style: none;    
 }
