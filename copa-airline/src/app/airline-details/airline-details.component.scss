@@ -20,7 +20,7 @@ body  {
     background-color:#ffffff;
     position: relative;
   }
-
+  
   .groupId,
   .version
   {
@@ -123,6 +123,7 @@ body  {
     -ms-transform:skewX(-30deg);
     -webkit-transform:skewX(-30deg);
     position: absolute;
+    color: #12416e;
 }
 .nav-tabs .nav-link {
   background: #6c757d6e;
@@ -154,7 +155,7 @@ body  {
   font-size: 15px;
 }
 .btn-light {
-  color: #0069d9;
+  color: #12416e;
   background-color: #ffffff;
   width: 100px;   
   height: 34px;
@@ -185,16 +186,14 @@ img:hover{
   height: 15px;
   width: 15px;
   margin-top: 14px;
-  padding-right: 20px;
-  // margin-right: 20px;  
-  // padding-right: 60px;
+  padding-right: 20px; 
 }
 .bg-primary {
-  background-color: #0a4789 !important;
+  background-color: #12416e !important;
 }
 .btn-primary{
-  background-color: #0a4789 !important;
-border: #0a4789;
+  background-color: #12416e !important; 
+  border: #12416e;
 }
 a {
   // color: #252729;
@@ -325,34 +324,3 @@ textarea{
   margin-left: 70px;
 }
 
-
-// /* reset */
-// ul, li, a {
-//   margin: 0; padding: 0;
-// }
-// /* nav stuff */
-// ul, li, a {
-//   display: inline-block;
-//   text-align: center;
-// }
-// /* appearance styling */
-// ul {
-//   /* hacks to make one side slant only */
-//   overflow: hidden;
-//   // background: linear-gradient(to right, red, white, white, red);
-// }
-// li {
-//   // background-color: red;
-//    transform:skewX(-150deg);
-//   -ms-transform:skewX(-150deg);
-//   -webkit-transform:skewX(-150deg);
-// }
-// li a {
-//   padding: 3px 6px 3px 6px;
-//   color: #ffffff;
-//   text-decoration: none;
-//   width: 80px;
-//    transform:skewX(20deg);
-//   -ms-transform:skewX(20deg);
-//   -webkit-transform:skewX(20deg);
-// }

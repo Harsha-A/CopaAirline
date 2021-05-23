@@ -3,15 +3,13 @@
       <div class="switch-tabs">          
           <div class="col-8" id="flight-details">
             <div class="row">
-
               <div class="groupId">Group ID</div><div class="groupId1">{{flight.groupId}}</div>              
               <span class="copytoclipboard" data-toggle="tooltip" (click)="copyToClip($event)">
                 <img src=".././../assets/paste.svg">
-
               </span>              
               <div class="version">Version</div><div class="version1">{{flight.version}} </div>
-              <div>
-                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..." disabled>
+              <div class="customradio">
+                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..." >
               </div>
               <div class="flight">Flight</div><div class="flight1">{{flight.flightno}}</div>                       
             </div>
