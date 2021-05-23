@@ -59,12 +59,13 @@ body  {
   }
   .background-grey{
     background-color:#fff;
-    margin:1px
+    margin:1px;
   }
   #flight-details{
     padding: 0px 25px;
     margin-bottom: 30px;
     background-color:#f0f0f0;
+    border-radius: 0.25rem;
   }
   .airline-form1,
   .airline-form2{
@@ -74,7 +75,7 @@ body  {
     max-height:470px;
   }
   .airline-form3{
-    padding:45px;   
+    padding: 45px 20px;   
     background-color:#f0f0f0;
     min-height:220px;
     max-height:220px;
@@ -99,20 +100,51 @@ body  {
   max-width: 50%;
   padding-left: 50px;
 }
-
+.pad70{
+  padding-left: 54px;
+}
+.nav-tabs {
+  // transform: skewX(30deg);
+  // margin-left: -20px;
+}
+.skewednavbar{
+  transform:skewX(30deg);
+  -ms-transform:skewX(30deg);
+  -webkit-transform:skewX(30deg); 
+  position: relative;  
+  height: 40px;
+}
+.skewedtext{
+    overflow: hidden;
+    padding: 3px 6px 3px 25px;    
+    text-decoration: none;
+    width: 100px;
+     transform:skewX(-30deg);
+    -ms-transform:skewX(-30deg);
+    -webkit-transform:skewX(-30deg);
+    position: absolute;
+}
 .nav-tabs .nav-link {
   background: #6c757d6e;
   margin-bottom: -1px;
-  width:200px;
-  border: 1px solid transparent;
+  width:200px;  
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+  margin-left: -25px;
+  height: 40px;  
+  padding-top: 0px;
 }
-
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #495057;
   background-color: #f0f0f0;
   border-color: #dee2e6 #dee2e6 #fff;
+  height: 40px;  
+  padding-top: 0px;
+}
+.nav-list{
+  padding-right: 20px;
+  padding-left: 10px;
+  overflow: overlay;
 }
 .btn-primary {
   color: #fff;
@@ -180,7 +212,6 @@ a {
   opacity: 0.8;
   border-color: #495057; 
 }
-
 .dropdown-menu{
 width:350px;
 height:40px;
@@ -233,28 +264,42 @@ box-shadow: transparent;
 }
 textarea{
   display: block;
-  min-width: 300px;
+  min-width: 330px;
   min-height: 100px;  
   max-width: 330px;
-  max-height: 100px;
+  max-height: 100px;  
 }
 .marginbottom{
   margin-bottom: 50px;
 }
 .table{
-  width: 1300px;
-  height: 400px;
+  min-width: 1300px;
+  height: 400px;  
+  border-bottom: 1px solid #dee2e6
 }
 .table-striped{  
   overflow:scroll;
+  box-shadow: 5px 10px;    
+  margin-bottom: 0px;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.table td {
+  padding: 0.75rem;
+  padding-right: 100px;
+  vertical-align: top;
+  // border: 1px solid #6c757d;
 }
 .deiTable{
-  padding:10px;
+  padding:0px 0px;
   max-height: 250px;
   min-width: 1330px;
-  overflow: scroll;
+  overflow: scroll;  
+  overflow-x: hidden; /* Hide Horizontal scrollbar */
+  border-color: #6c757d;
 }
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -275,3 +320,39 @@ textarea{
 ::-webkit-scrollbar-thumb:hover {
   background: grey; 
 }
+
+.coltextarea{
+  margin-left: 70px;
+}
+
+
+// /* reset */
+// ul, li, a {
+//   margin: 0; padding: 0;
+// }
+// /* nav stuff */
+// ul, li, a {
+//   display: inline-block;
+//   text-align: center;
+// }
+// /* appearance styling */
+// ul {
+//   /* hacks to make one side slant only */
+//   overflow: hidden;
+//   // background: linear-gradient(to right, red, white, white, red);
+// }
+// li {
+//   // background-color: red;
+//    transform:skewX(-150deg);
+//   -ms-transform:skewX(-150deg);
+//   -webkit-transform:skewX(-150deg);
+// }
+// li a {
+//   padding: 3px 6px 3px 6px;
+//   color: #ffffff;
+//   text-decoration: none;
+//   width: 80px;
+//    transform:skewX(20deg);
+//   -ms-transform:skewX(20deg);
+//   -webkit-transform:skewX(20deg);
+// }

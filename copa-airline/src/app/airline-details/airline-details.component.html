@@ -18,8 +18,8 @@
         </div>    
         <div class="background-grey">
           <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-            <li [ngbNavItem]="1">
-              <a active ngbNavLink>Flight</a>          
+            <li class="nav-list" [ngbNavItem]="1">
+              <div class="skewednavbar"><a active ngbNavLink><div class="skewedtext">Flight</div></a></div>          
               <ng-template ngbNavContent>
                   <form [formGroup]="flightForm" (ngSubmit)="onSubmit()" >
                   <div class="airline-form1">
@@ -101,8 +101,8 @@
                 </form>
                 </ng-template>
               </li>
-              <li [ngbNavItem]="2">
-                <a ngbNavLink>Segment</a>
+              <li class="nav-list" [ngbNavItem]="2">
+                <div class="skewednavbar"><a ngbNavLink><div class="skewedtext">Segment</div></a></div>
                 <ng-template ngbNavContent>
                   <form [formGroup]="segmentForm" (ngSubmit)="onSubmit()" >
                   <div class="airline-form2">
@@ -232,13 +232,19 @@
                 </form>
                 </ng-template>
               </li>
-              <li [ngbNavItem]="3">
-                <a ngbNavLink>DEI</a>
+              <li class="nav-list" [ngbNavItem]="3">
+                <div class="skewednavbar"><a ngbNavLink><div class="skewedtext">DEI</div></a></div>
                 <ng-template ngbNavContent>
                   <div class="airline-form3">
+                    <div class="row">
+                      <div class="col-4"><span></span></div>
+                      <div class="col-3"><span class="pad0">DEI Code</span></div>
+                      <div class="col-5"><span class="pad70">DEI Text</span></div>
+                    </div>
                       <div class="row">
-                        <div class="col-4">  
+                        <div class="col-4">                            
                           <div class="dropdown">
+                            
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Dropdown button
                             </button>
@@ -249,8 +255,9 @@
                             </ul>
                           </div>
                         </div>
-                        <div class="col-4">  
+                        <div class="col-3">  
                           <div class="dropdown">
+                            <!-- <span>DEI Code</span> -->
                             <button class="btn btn-secondary2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Dropdown button
                             </button>
@@ -261,28 +268,27 @@
                             </ul>
                           </div>
                         </div>
-                        <div class="col-4"> 
-                          <div class="row">
-                            <div class="form-group">                            
-                              <textarea id="textarea" rows="3"></textarea>                            
-                            </div>
-                          <button class="btn btn-primary float-right" type="submit">Add</button>
-                          </div>                          
+                        <div class="col-5"> 
+                          <div class="coltextarea">
+                            <!-- <span>DEI Text</span> -->
+                            <div class="row">
+                              <div class="form-group">                            
+                                <textarea id="textarea" rows="3"></textarea>                            
+                              </div>
+                            <button class="btn btn-primary float-right" type="submit">Add</button>
+                            </div>                          
+                          </div>
                         </div>
                       </div>
-                    </div>
-                      <!-- <div class="row"> -->
-                        <!-- <div class="marginbottom">
-
-                        </div> -->
+                    </div>                      
                         <div class="deiTable">
                           <table class="table table-striped">
                             <thead>
                               <tr>
                                 <!-- <th scope="col">#</th> -->
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col"></th>
+                                <th scope="col">DEI Code</th>
+                                <th scope="col">DEI Text</th>
                               </tr>
                             </thead>
                             <tbody>
