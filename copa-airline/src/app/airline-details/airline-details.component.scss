@@ -67,13 +67,18 @@ body  {
     background-color:#f0f0f0;
   }
   .airline-form1,
-  .airline-form2,
-  .airline-form3{
+  .airline-form2{
     padding:45px;   
     background-color:#f0f0f0;
     min-height:470px;
+    max-height:470px;
   }
-
+  .airline-form3{
+    padding:45px;   
+    background-color:#f0f0f0;
+    min-height:220px;
+    max-height:220px;
+  }
   .form-control {
     display: block;
     width: 100%;
@@ -160,10 +165,11 @@ img:hover{
 border: #0a4789;
 }
 a {
-  color: #0a4789;
+  // color: #252729;
   text-decoration: none;
   background-color: transparent;
 }
+
 .copytoclipboard{
   cursor: pointer;
   opacity: 1;
@@ -173,4 +179,99 @@ a {
 .copytoclipboard:hover {
   opacity: 0.8;
   border-color: #495057; 
+}
+
+.dropdown-menu{
+width:350px;
+height:40px;
+background:transparent; 
+padding: 0px 25px;
+border-color: #f0f0f0;;
+border-radius: 0.25rem;
+box-shadow: transparent;
+}
+.dropdown-item{
+  width:320px;
+  height:40px;
+  background-color: #6c757d6e;
+
+}
+.dropdown-item:hover{
+  width:320px;
+  height:40px;
+  color: #252729;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #16181b;
+  text-decoration: none;
+  background-color: transparent;
+}
+.btn-secondary {
+  color: #252729;
+  background-color: #6c757d6e;
+  border-color: #6c757d;
+  width:350px;
+  height:40px;
+}
+.btn-secondary2 {
+  color: #252729;
+  background-color: #fff;
+  border-color: #6c757d;
+  width:350px;
+  height:40px;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  margin-left: 40px;
+}
+textarea{
+  display: block;
+  min-width: 300px;
+  min-height: 100px;  
+  max-width: 330px;
+  max-height: 100px;
+}
+.marginbottom{
+  margin-bottom: 50px;
+}
+.table{
+  width: 1300px;
+  height: 400px;
+}
+.table-striped{  
+  overflow:scroll;
+}
+.deiTable{
+  padding:10px;
+  max-height: 250px;
+  min-width: 1330px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
 }

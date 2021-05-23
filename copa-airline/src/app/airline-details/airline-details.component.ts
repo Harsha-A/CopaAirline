@@ -18,6 +18,11 @@ export class AirlineDetailsComponent implements OnInit {
       flightno:''
     };  
   clipboard='';
+  dropdown = [
+    {id:1,Name:"One"},
+    {id:2,Name:"Two"},
+    {id:3,Name:"Three"},
+  ]
   ngOnInit(): void {
     this.flight.groupId = '20210522GP0000002';
     this.flight.version = 'V0001';
@@ -56,6 +61,7 @@ export class AirlineDetailsComponent implements OnInit {
     console.log($event)
     this.clipboard = this.flight.groupId
     console.log(this.clipboard)
+    this.copyMessage(this.clipboard)
   }
    getControl(){
     return this.flightForm.controls;
@@ -66,4 +72,18 @@ export class AirlineDetailsComponent implements OnInit {
     console.log(this.segmentForm)
   }
   
+  copyMessage(val: string){
+    const selBox = document.createElement('textarea');
+    selBox.style.position = 'fixed';
+    selBox.style.left = '0';
+    selBox.style.top = '0';
+    selBox.style.opacity = '0';
+    selBox.innerText = val;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);    
+  }
 }
+
